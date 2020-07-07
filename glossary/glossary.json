@@ -1,0 +1,25 @@
+{
+    "languages": {
+        "en": { "name": "English", "dir": "ltr" },
+        "ja": { "name": "日本語", "dir": "ltr" }
+    },
+    "entries" : {
+        "AB": {
+            "def": "https://w3c.github.io/w3process/#AB",
+            "full": "Advisory Board", 
+            "link": [ 
+                "https://www.w3.org/2002/ab/"
+            ],
+            "desc": {
+                "en": {
+                    "name": "Advisory Board",
+                    "desc": "Advisory Board provides ongoing guidance to the Team on issues of strategy, management, legal matters, process, and conflict resolution"
+                },
+                "ja": {
+                    "name": "運営理事会",
+                    "desc": "ABは、戦略、管理、法的問題、プロセス、紛争解決の問題について、チームに継続的なガイダンスを提供します"
+                }
+            }
+        }
+    }
+}
