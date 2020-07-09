@@ -26,7 +26,7 @@ function refleshGlossary(sel_lang) {
   cur_lang = sel_lang;
   document.getElementById('tbody_glossary').innerHTML = '';
   Object.keys(data_orig["entries"]).forEach(function(key) {
-    var trline;
+    var trline = '';
     trline += '<tr id="' + makeIdAbbr(key) + '">';
     if (data_orig['entries'][key]['full']) {
       trline += '<td>' + key + '</td>';
