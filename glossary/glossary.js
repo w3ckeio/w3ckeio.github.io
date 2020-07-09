@@ -44,6 +44,14 @@ function refleshGlossary(sel_lang) {
       trline += '<td></td><td></td>';
     }
     if (data_orig['entries'][key]['link']) {
+      trline += '<td>';
+      for (let ino = 0; i < data_orig['entries'][key]['link'].length; ino++) {
+        if (ino > 0) { trline += ', '; }
+        trline += '<a href="' + data_orig['entries'][key]['link'][ino] + '">*';
+        trline += (ino + 1).toString();
+        trline += '</a>';
+      }
+      trline += '</td>';
     } else { trline += '<td></td>' };
     trline += '</tr>';
     document.getElementById('tbody_glossary').insertAdjacentHTML('beforeend',
