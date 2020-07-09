@@ -45,7 +45,7 @@ function refleshGlossary(sel_lang) {
     }
     if (data_orig['entries'][key]['link']) {
       trline += '<td>';
-      for (let ino = 0; i < data_orig['entries'][key]['link'].length; ino++) {
+      for (let ino = 0; ino < data_orig['entries'][key]['link'].length; ino++) {
         if (ino > 0) { trline += ', '; }
         trline += '<a href="' + data_orig['entries'][key]['link'][ino] + '">*';
         trline += (ino + 1).toString();
