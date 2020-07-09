@@ -21,5 +21,92 @@
                 }
             }
         }
+        , "AC": {
+            "def": "https://w3c.github.io/w3process/#ac",
+            "full": "Advisory Committee",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "会員組織代表者",
+                    "desc": "各W3Cメンバー組織は、1人をW3C ACに指名することができます"
+                }
+            }
+        }
+        , "AC Appeals": {
+            "def": "https://w3c.github.io/w3process/#ACAppeal",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "異議申し立て",
+                    "desc": "W3CのWG/IGの作成・変更や作業中の仕様の勧告化などの状態変更などの決定に対して、ACは異議申し立てを行うことができます"
+                }
+            }
+        }
+        , "AC Reviews": {
+            "def": "https://w3c.github.io/w3process/#ACReview",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "ACレビュー",
+                    "desc": "ACは、新しく改訂されたワーキング・アンド・インタレスト・グループのチャーター、提案された推奨、時代遅れ、廃止、代替、またはリストアされる勧告の提案、W3Cプロセスの変更を提案します"
+                }
+            }
+        }
+        , "CR": {
+            "def": "https://w3c.github.io/w3process/#RecsCR",
+            "full": "Candidate Recommendations",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "勧告候補",
+                    "desc": "仕様が要求を満たしているか、広く一般に実装を呼び掛け、実装および相互運用試験を行う段顔の仕様案"
+                }
+            }
+        }
+        , "PR": {
+            "def": "https://w3c.github.io/w3process/#RecsPR",
+            "full": "Proposed Recommendation",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "勧告案",
+                    "desc": "仕様が勧告となる前の最終段階で、W3C会員全体によるレビューが実施されます"
+                }
+            }
+        }
+        , "FPWD": {
+            "def": "https://w3c.github.io/w3process/#fpwd",
+            "full": "First Public Working Draft",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "公開草案初版",
+                    "desc": "仕様の策定において最初に公開される原案で、標準化に向けた策定作業が開始されたことをW3C 内外に告知する役割もあります"
+                }
+            }
+        }
+        , "WD": {
+            "def": "https://w3c.github.io/w3process/#RecsWD",
+            "full": "Working Draft",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "草案",
+                    "desc": "公開草案初版以降、勧告候補までの間に公開される更新版"
+                }
+            }
+        }
+        , "REC": {
+            "def": "https://w3c.github.io/w3process/#RecsW3C",
+            "full": "Recommendation",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "勧告",
+                    "desc": "W3Cの承認された標準であり、すべての勧告化での要求要件を満たし、承認された仕様です"
+                }
+            }
+        }
+
     }
 }
