@@ -1,4 +1,4 @@
-# 20XX年XX月
+# 20XX年XX月 W3C活動概要
 
 [20XX年XX月のニュースレター](https://lists.w3.org/Archives/Public/w3c-announce/2020JanMar/subject.html)よりのまとめです。
 
