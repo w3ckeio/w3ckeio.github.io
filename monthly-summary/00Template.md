@@ -20,6 +20,8 @@
 
 ### 新規追加されたレポジトリ
 
+* [API](https://api.github.com/orgs/w3c/repos?direction=desc&sort=created)
+
 ## 公開されたブログポスト
 
 * 一般
