@@ -21,7 +21,13 @@
 
 ### 新規追加されたレポジトリ
 
-* [API](https://api.github.com/orgs/w3c/repos?direction=desc&sort=created)
+* API
+  * [w3c](https://api.github.com/orgs/w3c/repos?direction=desc&sort=created)
+  * [immersive-web](https://api.github.com/orgs/immersive-web/repos?direction=desc&sort=created)
+  * [WICG](https://api.github.com/orgs/WICG/repos?direction=desc&sort=created)
+  * [webmachinelearning](https://api.github.com/orgs/webmachinelearning/repos?direction=desc&sort=created)
+  * [gpuweb](https://api.github.com/orgs/gpuweb/repos?direction=desc&sort=created)
+  * [privacycg](https://api.github.com/orgs/privacycg/repos?direction=desc&sort=created)
 
 ## 公開されたブログポスト
 
