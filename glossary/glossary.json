@@ -107,6 +107,46 @@
                 }
             }
         }
+        , "W3C Process Document": {
+            "def": "https://www.w3.org/Consortium/Process/",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "W3C手続規定",
+                    "desc": "W3Cの各種グループの運営や標準策定手順の手続きを定義する文書"
+                }
+            }
+        }
+        , "W3C Patent Policy": {
+            "def": "https://www.w3.org/Consortium/Patent-Policy/",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "W3C特許方針",
+                    "desc": "W3Cの仕様に関わる特許の扱いとその手順を定義する文書"
+                }
+            }
+        }
+        , "Member Submissions": {
+            "def": "https://www.w3.org/Consortium/Process/#Submission",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "会員提案",
+                    "desc": "W3C会員による特定の項目に関する提案書"
+                }
+            }
+        }
+        , "Technical Report": {
+            "def": "https://www.w3.org/Consortium/Process/#technical-report",
+            "link": [],
+            "desc": {
+                "ja": {
+                    "name": "標準情報",
+                    "desc": "",
+                }
+            }
+        }
 
     }
 }
