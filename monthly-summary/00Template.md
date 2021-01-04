@@ -1,6 +1,6 @@
 # 20XX年XX月 W3C活動概要
 
-[20XX年XX月のニュースレター](https://lists.w3.org/Archives/Public/w3c-announce/2020JanMar/subject.html)よりのまとめです。
+[20XX年XX月のニュースレター](https://lists.w3.org/Archives/Public/w3c-announce/20XXXXXXXX/subject.html)よりのまとめです。
 [前月分はこちら](20XXXX.md)。
 
 ## ニュース
@@ -9,15 +9,21 @@
 ### 直近の予定
 
 * upcoming events list
-* [transitions repository](https://github.com/w3c/transitions/issues)
 * [strategy repository](https://github.com/w3c/strategy/issues)
+  * 該当月中に提案されこのページ作成時点で議論・検討中のもの
+  * 該当月中に動きがあったもの、ステータスサマリー付き
 
 ## 公開された仕様の更新
 
 * FPWD公開
   * [title](link to TR)、[ニュースポスト](link to blog)
-* 新規CR
+* WD更新
+* CR公開
+* CRD公開
 * CR更新
+* PR公開
+* REC公開、更新
+* WG NOTE公開
 
 ### 新規追加されたレポジトリ
 
@@ -28,6 +34,10 @@
   * [webmachinelearning](https://api.github.com/orgs/webmachinelearning/repos?direction=desc&sort=created)
   * [gpuweb](https://api.github.com/orgs/gpuweb/repos?direction=desc&sort=created)
   * [privacycg](https://api.github.com/orgs/privacycg/repos?direction=desc&sort=created)
+  * [w3cping](https://api.github.com/orgs/w3cping/repos?direction=desc&sort=created)
+  * [WebAudio](https://api.github.com/orgs/WebAudio/repos?direction=desc&sort=created)
+  * [WebAssembly](https://api.github.com/orgs/WebAssembly/repos?direction=desc&sort=created)
+  * [mathml-refresh](https://api.github.com/orgs/mathml-refresh/repos?direction=desc&sort=created)
 
 ## 公開されたブログポスト
 
