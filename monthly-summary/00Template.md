@@ -9,8 +9,9 @@
 ### 直近の予定
 
 * upcoming events list
-* [transitions repository](https://github.com/w3c/transitions/issues)
 * [strategy repository](https://github.com/w3c/strategy/issues)
+  * 該当月中に提案されこのページ作成時点で議論・検討中のもの
+  * 該当月中に動きがあったもの、ステータスサマリー付き
 
 ## 公開された仕様の更新
 
