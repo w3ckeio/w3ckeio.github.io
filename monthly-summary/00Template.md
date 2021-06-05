@@ -39,6 +39,7 @@
   * [WebAudio](https://api.github.com/orgs/WebAudio/repos?direction=desc&sort=created)
   * [WebAssembly](https://api.github.com/orgs/WebAssembly/repos?direction=desc&sort=created)
   * [mathml-refresh](https://api.github.com/orgs/mathml-refresh/repos?direction=desc&sort=created)
+  * [DPVCG](https://api.github.com/orgs/dpvcg/repos?direction=desc&sort=created)
 
 ## 公開されたブログポスト
 
@@ -48,3 +49,4 @@
 
 ## W3Cメンバー更新
 
+新規加入一覧です（退会のリストはありません）
