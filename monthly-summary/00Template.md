@@ -15,6 +15,8 @@
 
 ## 公開された仕様の更新
 
+[ClearSpec2021](https://github.com/w3c/tr-pages/blob/main/clearspec2021.md)に基づく頻繁な更新の仕様（GitHubでのメイン作業ブランチの更新ごとに/TR/を更新する）については、先頭に`(CS)`のマーク入りでリンク先は最新版です。後ろの日付は参考までのものになります。
+
 * FPWD公開
   * [title](link to TR)、[ニュースポスト](link to blog)
 * WD更新
