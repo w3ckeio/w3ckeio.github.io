@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub repository list</title>
+  <script>
+const list_orgs = [ 'w3c', 'immersive-web', 'WICG', 'webmachinelearning',
+        'gpuweb(, 'privacycg', 'w3cping', 'w3ctag', 'WebAudio', 
+        'WebAssembly', 'mathml-refresh', 'dpvcg' ];
+const ghapi_head = 'https://api.github.com/orgs/';
+const ghapi_foot = '/repos?direction=desc&sort=created';
+function loadAPIData() {
+  list_orgs.forEach((id) => {
+    var pick_start = new Date();
+    pick_start.setMonth(pick_start.getMonth() - 1);
+    pick_start.setDate(1);
+    pick_start.setHours(0, 0, 0, 0);
+    fetch(ghapi_head + id + ghapi_foot, {
+      cache: 'no-cache', method: 'GET', redirect: 'follow' })
+    .then((response) => {
+      if (response.ok) {return response.json(); }
+      throw Error('Returned response for org "' + id + '": ' + reponse.status);
+    }).then((json) => {
+      let elems = '';
+      json.forEach((dat) => {
+        let created = new Date(dat.created_at);
+        if ((created - pick_start) > 0) {
+          elems += '<li><a href="' + dat.html_url + '">' + dat.full_name + '</a>';
+          if (dat.has('description')) {
+            elems += ': ' + dat.description;
+          }
+          elems += ' (' + dat.created_at + ')';
+          elems += '</li>';
+        }
+      });
+      document.getElementById('listrepo').innerHTML += elems;
+    }).catch((error) => { console.log('Error: ' + error.message); });
+  });
+}
+window.addEventListener('load', loadAPIData);
+  </script>
+</head>
+<body>
+<h2>List of GitHub repositories (1mo)</h2>
+<ul id="listrepo">
+</ul>
+</body>
+</html>
