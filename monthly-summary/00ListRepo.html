@@ -22,19 +22,24 @@ function loadAPIData() {
       throw Error('Returned response for org "' + id + '": ' + reponse.status);
     }).then((json) => {
       let elems = '';
+      let etxt = '';
       json.forEach((dat) => {
         let created = new Date(dat.created_at);
         if ((created - pick_start) > 0) {
           elems += '<li><a href="' + dat.html_url + '">' + dat.full_name + '</a>';
+          etxt += '* [' + dat.full_name + '](' + dat.html_url + ')';
           if (dat.description != null) {
             elems += ': ' + dat.description;
+            etxt += ': ' + dat.description;
           }
           elems += ' (' + dat.created_at + ')';
           elems += '</li>';
+          etxt += "\n";
         }
       });
       document.getElementById('listrepo').innerHTML += elems;
-    }).catch((error) => { console.log('Error: ' + error.message); });
+      document.getElementById('listtext').innerText += etxt;
+    }).catch((error) => { document.getElementById('errors').innerText += error.message + "\n"; });
   });
 }
 window.addEventListener('load', loadAPIData);
@@ -44,5 +49,9 @@ window.addEventListener('load', loadAPIData);
 <h2>List of GitHub repositories (from day 1 of 1 mo before)</h2>
 <ul id="listrepo">
 </ul>
+<h2>Errors</h2>
+<div><pre id="errors"></pre></div>
+<h2>Text version for copy</h2>
+<div><pre id="listtext"></pre></div>
 </body>
 </html>
