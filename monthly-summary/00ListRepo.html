@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub repository list</title>
+  <script>
+const list_orgs = [ 'w3c', 'immersive-web', 'WICG', 'webmachinelearning',
+        'gpuweb', 'privacycg', 'w3cping', 'w3ctag', 'WebAudio', 
+        'WebAssembly', 'mathml-refresh', 'dpvcg' ];
+const ghapi_head = 'https://api.github.com/orgs/';
+const ghapi_foot = '/repos?direction=desc&sort=created';
+function loadAPIData() {
+  list_orgs.forEach((id) => {
+    var pick_start = new Date();
+    pick_start.setMonth(pick_start.getMonth() - 1);
+    pick_start.setDate(1);
+    pick_start.setHours(0, 0, 0, 0);
+    fetch(ghapi_head + id + ghapi_foot, {
+      cache: 'no-cache', method: 'GET', redirect: 'follow' })
+    .then((response) => {
+      if (response.ok) {return response.json(); }
+      throw Error('Returned response for org "' + id + '": ' + reponse.status);
+    }).then((json) => {
+      let elems = '';
+      let etxt = '';
+      json.forEach((dat) => {
+        let created = new Date(dat.created_at);
+        if ((created - pick_start) > 0) {
+          elems += '<li><a href="' + dat.html_url + '">' + dat.full_name + '</a>';
+          etxt += '* [' + dat.full_name + '](' + dat.html_url + ')';
+          if (dat.description != null) {
+            elems += ': ' + dat.description;
+            etxt += ': ' + dat.description;
+          }
+          elems += ' (' + dat.created_at + ')';
+          elems += '</li>';
+          etxt += "\n";
+        }
+      });
+      document.getElementById('listrepo').innerHTML += elems;
+      document.getElementById('listtext').innerText += etxt;
+    }).catch((error) => { document.getElementById('errors').innerText += error.message + "\n"; });
+  });
+}
+window.addEventListener('load', loadAPIData);
+  </script>
+</head>
+<body>
+<h2>List of GitHub repositories (from day 1 of 1 mo before)</h2>
+<ul id="listrepo">
+</ul>
+<h2>Errors</h2>
+<div><pre id="errors"></pre></div>
+<h2>Text version for copy</h2>
+<div><pre id="listtext"></pre></div>
+</body>
+</html>
