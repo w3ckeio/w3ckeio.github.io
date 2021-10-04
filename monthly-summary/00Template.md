@@ -1,5 +1,12 @@
 # 20XX年XX月 W3C活動概要
 
+- ニュース：
+- 直近の予定：
+- 公開された仕様の更新：
+- 新規追加されたレポジトリ：
+- 公開されたブログポスト：
+- W3Cメンバー更新(新規加入)：
+
 [20XX年XX月のニュースレター](https://lists.w3.org/Archives/Public/w3c-announce/20XXXXXXXX/subject.html)よりのまとめです。
 [前月分はこちら](20XXXX.md)。
 
