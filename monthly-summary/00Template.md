@@ -1,5 +1,12 @@
 # 20XX年XX月 W3C活動概要
 
+- ニュース：
+- 直近の予定：
+- 公開された仕様の更新：
+- 新規追加されたレポジトリ：
+- 公開されたブログポスト：
+- W3Cメンバー更新(新規加入)：
+
 [20XX年XX月のニュースレター](https://lists.w3.org/Archives/Public/w3c-announce/20XXXXXXXX/subject.html)よりのまとめです。
 [前月分はこちら](20XXXX.md)。
 
@@ -12,6 +19,8 @@
 * [strategy repository](https://github.com/w3c/strategy/issues)
   * 該当月中に提案されこのページ作成時点で議論・検討中のもの
   * 該当月中に動きがあったもの、ステータスサマリー付き
+* WGなどの憲章策定・更新によるCall for Participation
+  * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
 
 ## 公開された仕様の更新
 
@@ -30,7 +39,7 @@
 
 ### 新規追加されたレポジトリ
 
-[ツール](00ListRepo.html)のテキスト出力をここにコピペする
+[ツール](https://w3ckeio.github.io/monthly-summary/00ListRepo.html)のテキスト出力をここにコピペする
 
 ## 公開されたブログポスト
 
