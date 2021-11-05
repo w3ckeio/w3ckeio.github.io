@@ -29,7 +29,7 @@
 * [strategy repository](https://github.com/w3c/strategy/issues)
   * 該当月中に提案されこのページ作成時点で議論・検討中のもの
   * 該当月中に動きがあったもの、ステータスサマリー付き
-* WGなどの憲章策定・更新によるCall for Participation
+* WGなどの憲章策定・更新によるCall for Participation、chair変更
   * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
 
 ## 公開された仕様の更新
