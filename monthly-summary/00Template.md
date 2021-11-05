@@ -20,10 +20,8 @@
 * ニュース
 * 一般
 * WGアップデート
-* 仕様公開関係
 
-
-### 直近の予定
+## 直近の予定・最近の変更
 
 * upcoming events list
 * [strategy repository](https://github.com/w3c/strategy/issues)
@@ -49,7 +47,7 @@
 * REC公開、更新
 * NOTE公開、更新
 
-### 新規追加されたGitHubレポジトリ
+## 新規追加されたGitHubレポジトリ
 
 [ツール](https://w3ckeio.github.io/monthly-summary/00ListRepo.html)のテキスト出力をここにコピペする
 
