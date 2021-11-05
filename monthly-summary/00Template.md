@@ -49,7 +49,7 @@
 * REC公開、更新
 * NOTE公開、更新
 
-### 新規追加されたレポジトリ
+### 新規追加されたGitHubレポジトリ
 
 [ツール](https://w3ckeio.github.io/monthly-summary/00ListRepo.html)のテキスト出力をここにコピペする
 
