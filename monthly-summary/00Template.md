@@ -30,6 +30,7 @@
   * 新領域などについての議論
 * WGなどの憲章策定・更新によるCall for Participation、chair変更
   * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
+  * co-chair
 
 ## 公開された仕様の更新
 
