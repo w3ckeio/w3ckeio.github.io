@@ -37,7 +37,8 @@
 [ClearSpec2021](https://github.com/w3c/tr-pages/blob/main/clearspec2021.md)に基づく頻繁な更新の仕様（GitHubでのメイン作業ブランチの更新ごとに/TR/を更新する）が採用されているWGが多く、月内に頻繁に更新されているためでリンク先は月内の最新版のみです。後ろの日付は参考までのものになります。
 
 * FPWD, CR, PR, RECの公開はnewsに載るため、そこからリストを引っ張る
-* このディレクトリにあるスクリプトでたたき台が出る。cvsのディレクトリで`find . -type d -name '*-202110*' | sed -e 's/^\.\///' | ./00trcoord.py`を実行
+* このディレクトリにあるスクリプトでたたき台が出る。cvsのディレクトリで`find . -type d -name '*-20YYMM*' | sed -e 's/^\.\///' | ./00trcoord.py`を実行
+  * `https://w3c.github.io/browser-specs/index.json`を実行ディレクトリに置くとデータを読みます
 
 * FPWD公開
   * [title](link to TR)、[ニュースポスト](link to blog)
