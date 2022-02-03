@@ -43,9 +43,8 @@
 * FPWD公開
   * [title](link to TR)、[ニュースポスト](link to blog)
 * WD更新
-* CR公開
 * CRD更新
-* CR更新
+* CRS公開、更新
 * PR公開
 * REC公開、更新
 * DNOTE更新
