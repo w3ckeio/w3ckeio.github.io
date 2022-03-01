@@ -25,7 +25,7 @@ function loadAPIData() {
       let etxt = '';
       json.forEach((dat) => {
         let created = new Date(dat.created_at);
-        if ((created - pick_start) > 0) {
+        if ( ((created - pick_start) > 0) && (! dat.private) ) {
           elems += '<li><a href="' + dat.html_url + '">' + dat.full_name + '</a>';
           etxt += '* [' + dat.full_name + '](' + dat.html_url + ')';
           if (dat.description != null) {
