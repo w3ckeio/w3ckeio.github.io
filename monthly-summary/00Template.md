@@ -31,6 +31,8 @@
 * WGなどの憲章策定・更新によるCall for Participation、chair変更
   * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
   * co-chair
+* その他トピック
+  * [spec-prod](https://lists.w3.org/Archives/Public/spec-prod/)
 
 ## 公開された仕様の更新
 
