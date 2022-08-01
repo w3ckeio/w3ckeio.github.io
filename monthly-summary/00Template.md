@@ -12,10 +12,7 @@
 [W3C週間ニュースのアーカイブ(英語)](https://lists.w3.org/Archives/Public/w3c-announce/20XXXXXXXX/subject.html)も提供されています。
 [前月分はこちら](20XXXX.md)。
 
-## ニュース・ブログポスト
-
-* [blog](https://www.w3.org/blog/)
-* [news](https://www.w3.org/blog/news/)
+## [ニュース](https://www.w3.org/blog/news/)・[ブログポスト](https://www.w3.org/blog/)
 
 * ニュース
 * 一般
