@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>GitHub repository list</title>
   <script>
+// list github repositories
 const list_orgs = [ 'w3c', 'immersive-web', 'WICG', 'webmachinelearning',
         'gpuweb', 'privacycg', 'w3cping', 'w3ctag', 'WebAudio', 
         'WebAssembly', 'mathml-refresh', 'dpvcg', 'patcg', 'WebView-CG',
@@ -11,7 +12,9 @@ const list_orgs = [ 'w3c', 'immersive-web', 'WICG', 'webmachinelearning',
 const ghapi_head = 'https://api.github.com/orgs/';
 const ghapi_foot = '/repos?direction=desc&sort=created';
 function loadAPIData() {
+  var t_orgs = '';
   list_orgs.forEach((id) => {
+    t_orgs += id + ', ';
     var pick_start = new Date();
     pick_start.setMonth(pick_start.getMonth() - 1);
     pick_start.setDate(1);
@@ -42,17 +45,44 @@ function loadAPIData() {
       document.getElementById('listtext').innerText += etxt;
     }).catch((error) => { document.getElementById('errors').innerText += error.message + "\n"; });
   });
+  document.getElementById('target_orgs').innerText = t_orgs.slice(0, -2);
 }
 window.addEventListener('load', loadAPIData);
+// list validate repo numbers
+const repos = 'https://w3c.github.io/validate-repos/report.json';
+function ListOrgsValidate() {
+  fetch(repos, { cache: 'no-cache', method: 'GET', redirect: 'follow' })
+  .then((response) => {
+    if (response.ok) {return response.json(); }
+    throw Error('Returned response for validate-repos: ' + response.status);
+  }).then((json) => {
+    var orgs_num = {};
+    json['repos'].forEach((repo) => {
+      var corg = repo['owner']['login'];
+      if (corg in orgs_num) { orgs_num[corg] += 1; }
+      else { orgs_num[corg] = 1; }
+    });
+    let lorg = document.getElementById('listorg');
+    Object.keys(orgs_num).forEach((org) => {
+      let elem = document.createElement('li');
+      elem.innerText = org + ': ' + orgs_num[org];
+      if (! list_orgs.includes(org)) {elem.innerText += ' (not included)'; }
+      lorg.appendChild(elem);
+    });
+  });
+};
+window.addEventListener('load', ListOrgsValidate);
   </script>
 </head>
 <body>
 <h2>List of GitHub repositories (from day 1 of 1 mo before)</h2>
-<ul id="listrepo">
-</ul>
+<ul id="listrepo"></ul>
+<p>Targets: <span id="target_orgs"></span></p>
 <h2>Errors</h2>
 <div><pre id="errors"></pre></div>
 <h2>Text version for copy</h2>
 <div><pre id="listtext"></pre></div>
+<h2>validate-repos organization counts</h2>
+<ul id="listorg"></ul>
 </body>
 </html>
