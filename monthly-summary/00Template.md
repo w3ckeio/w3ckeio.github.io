@@ -48,6 +48,8 @@
 * REC公開、更新
 * DNOTE更新
 * NOTE公開、更新
+* Draft Registry更新
+* Registry公開、更新
 
 ## 新規追加されたGitHubレポジトリ
 
