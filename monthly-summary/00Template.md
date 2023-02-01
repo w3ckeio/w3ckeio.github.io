@@ -8,8 +8,6 @@
 - W3Cメンバー更新(新規加入)：
 
 20XX年XX月のW3C関係のアップデートのまとめです。
-また、[W3C週間ニュース(英語)](https://www.w3.org/News/Public/)や、
-[W3C週間ニュースのアーカイブ(英語)](https://lists.w3.org/Archives/Public/w3c-announce/20XXXXXXXX/subject.html)も提供されています。
 [前月分はこちら](20XXXX.md)。
 
 ## [ニュース](https://www.w3.org/blog/news/)・[ブログポスト](https://www.w3.org/blog/)
