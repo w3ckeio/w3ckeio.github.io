@@ -19,6 +19,7 @@
 ## 直近の予定・最近の変更
 
 * upcoming events list
+  * https://www.w3.org/participate/eventscal.html から
 * [strategy repository](https://github.com/w3c/strategy/issues)
   * 該当月中に提案されこのページ作成時点で議論・検討中のもの
   * charterについて該当月中に動きがあったもの、ステータスサマリー付き
