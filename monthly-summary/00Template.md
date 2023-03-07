@@ -52,6 +52,8 @@
 
 ## 新規追加されたGitHubレポジトリ
 
+### [validate-repos](https://w3c.github.io/validate-repos/)にあるレポジトリの数
+
 [ツール](https://w3ckeio.github.io/monthly-summary/00ListRepo.html)のテキスト出力をここにコピペする
 
 ## W3Cメンバー更新
