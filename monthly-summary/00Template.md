@@ -10,7 +10,7 @@
 20XX年XX月のW3C関係のアップデートのまとめです。
 [前月分はこちら](20XXXX.md)。
 
-## [ニュース](https://www.w3.org/blog/news/)・[ブログポスト](https://www.w3.org/blog/)
+## [ニュース](https://www.w3.org/news/)・[ブログポスト](https://www.w3.org/blog/)
 
 * ニュース
 * 一般
