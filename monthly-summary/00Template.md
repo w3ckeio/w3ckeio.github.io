@@ -10,7 +10,7 @@
 20XX年XX月のW3C関係のアップデートのまとめです。
 [前月分はこちら](20XXXX.md)。
 
-## [ニュース](https://www.w3.org/blog/news/)・[ブログポスト](https://www.w3.org/blog/)
+## [ニュース](https://www.w3.org/news/)・[ブログポスト](https://www.w3.org/blog/)
 
 * ニュース
 * 一般
@@ -20,6 +20,7 @@
 
 * [upcoming events list](https://www.w3.org/participate/eventscal.html)
 * [strategy repository](https://github.com/w3c/strategy/issues)
+  * Advance noticeもいれる ([public-new-work](https://lists.w3.org/Archives/Public/public-new-work/2023Jun/)とかから)
   * 該当月中に提案されこのページ作成時点で議論・検討中のもの
   * charterについて該当月中に動きがあったもの、ステータスサマリー付き
   * 新領域などについての議論
