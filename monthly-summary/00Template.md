@@ -27,6 +27,7 @@
   * 新領域などについての議論
 * WGなどの憲章策定・更新によるCall for Participation、chair変更
   * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
+  * CG/BG
   * co-chair
 * その他トピック
   * [spec-prod](https://lists.w3.org/Archives/Public/spec-prod/)
