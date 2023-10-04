@@ -20,7 +20,6 @@ function refresh_time () {
     let date = new Date();
     cur = Math.floor((count_date.getTime() - date.getTime()) / 1000);
   }
-  console.log(cur);
   if (cur < 0) {
     cur *= -1;
     disp_count = "-" + Math.floor(cur / 60).toString() + ":" + ("0" + (cur - Math.floor(cur / 60) * 60).toString()).substr(-2);
