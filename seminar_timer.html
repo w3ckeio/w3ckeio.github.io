@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>セミナー用カウントダウンタイマー</title>
+  <script>
+let count_t = null, count_b = null, count_g = null, count_y = null, count_r = null;
+let bg = [];
+let bg_n = { "b": "blue", "g": "green", "y": "yellow", "r": "red" };
+let cur = 0;
+let count_date = null;
+let cur_timer = null;
+function refresh_current () {
+  let c_date = new Date();
+  document.getElementById('current').innerText = c_date.toLocaleTimeString();
+}
+function refresh_time () {
+  let disp_count = "";
+  if (count_date != null) {
+    let date = new Date();
+    cur = Math.floor((count_date.getTime() - date.getTime()) / 1000);
+  }
+  console.log(cur);
+  if (cur < 0) {
+    cur *= -1;
+    disp_count = "-" + Math.floor(cur / 60).toString() + ":" + ("0" + (cur - Math.floor(cur / 60) * 60).toString()).substr(-2);
+    cur *= -1;
+  } else {
+    disp_count = Math.floor(cur / 60).toString() + ":" + ("0" + (cur - Math.floor(cur / 60) * 60).toString()).substr(-2);
+  }
+  document.getElementById('countdown').innerText = disp_count;
+  refresh_current();
+  for (let cbg of bg) {
+    if (cbg[1] >= cur) {
+      document.getElementById('timer').className = bg_n[cbg[0]];
+      break;
+    }
+  }
+}
+function startLoop() {
+  count_date = new Date();
+  count_date.setSeconds(count_date.getSeconds() + cur + 1);
+  clearInterval(cur_timer);
+  setInterval(refresh_time, 1000);
+}
+window.addEventListener("load", () => {
+  const p = new URLSearchParams(window.location.search);
+  if (p.has("t")) {
+    document.getElementById('desc').style.display = "none";
+    document.getElementById('timer').style.display = "block";
+    count_t = p.get('t') == null ? null : parseInt(p.get('t'));
+    cur = count_t;
+    count_b = p.get('b') == null ? null : parseInt(p.get('b')); if (count_b != null) { bg.push(['b', count_b]); };
+    count_g = p.get('g') == null ? null : parseInt(p.get('g')); if (count_g != null) { bg.push(['g', count_g]); };
+    count_y = p.get('y') == null ? null : parseInt(p.get('y')); if (count_y != null) { bg.push(['y', count_y]); };
+    count_r = p.get('r') == null ? null : parseInt(p.get('r')); if (count_r != null) { bg.push(['r', count_r]); };
+    bg.sort((f,s) => f[1] - s[1]);
+    refresh_time();
+    cur_timer = setInterval(refresh_current, 1000);
+    document.getElementById('timer').addEventListener('click', startLoop);
+  }
+});
+  </script>
+  <style>
+<!--
+#timer { display: none; top: 0; left: 0; width: 100%; height: 100%; position: absolute; }
+#countdown { position: absolute; top: 20vh; width: 100%; text-align: center; font-size: 15vw; }
+#current { position: absolute; top: 60vh; width: 100%; text-align: center; font-size: 8vw; }
+#timer.blue { background-color: #0000FF; color: #FFFFFF; }
+#timer.green { background-color: #00FF00; }
+#timer.yellow { background-color: #FFFF00; }
+#timer.red { background-color: #FF0000; }
+-->
+  </style>
+</head>
+<body>
+  <div id="desc">
+    <h1>使い方</h1>
+    <p>
+      クエリオプションを付けるとタイマー画面が表示されます。
+      画面上部に残り時間(mm:ss表示)が、下に現在時間(hh:mm:ss表示; PCのタイムゾーン)が出て、1秒ごとに更新されます。
+    </p>
+    <p>
+      背景色はデフォルトは白色、それ以外にクエリオプションで青、緑、黄、赤、表示が可能です。
+      それぞれの色の開始時間を指定し、他の色が指定された時間まで継続されます。
+    </p>
+    <p>画面クリックで開始します。</p>
+    <p>利用可能なオプションは以下の通り。</p>
+    <dl>
+      <dt>t</dt>
+      <dd>カウントダウン時間 (sec)</dd>
+      <dt>b</dt>
+      <dd>背景色が青色になる開始時間 (sec)</dd>
+      <dt>g</dt>
+      <dd>背景色が緑色になる開始時間 (sec)</dd>
+      <dt>y</dt>
+      <dd>背景色が黄色になる開始時間 (sec)</dd>
+      <dt>r</dt>
+      <dd>背景色が赤色になる開始時間 (sec)</dd>
+    </dl>
+    <p>例としては、<code>seminar_timer.html?t=720&amp;y=120&amp;r=0</code>では、720秒(12分)のタイマー、120秒(2分)から0秒までは背景黄色、0秒以降は赤になります。</p>
+  </div>
+  <div id="timer">
+    <div id="countdown"></div>
+    <div id="current"></div>
+  </div>
+</body>
+</html>
