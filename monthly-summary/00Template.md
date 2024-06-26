@@ -5,16 +5,18 @@
 - グループ
   - Advance notice: 
   - 新規charter議論: 
+  - recharter: 
   - グループ新期間: 
   - co-chairs: 
-  - CG/BG: 
+  - CG/BG:  (BG), (CG)
 - 仕様書更新・公開
   - FPWD: 
   - WD: 
   - CRS: 
   - CRD: 
-  - NOTE系: 
-  - Registry系: 
+  - REC: (full), (candidate amendments)
+  - NOTE系: (NOTE), (DNOTE)
+  - Registry系: (REG), (DRY)
 - 新規追加レポジトリ: 
 - 新規加入W3Cメンバー: 
 
@@ -38,6 +40,7 @@
   * 新領域などについての議論
 * WGなどの憲章策定・更新によるCall for Participation、chair変更
   * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
+  * extension
   * CG/BG
   * co-chair
 * その他トピック

@@ -64,10 +64,8 @@ function ListOrgsValidate() {
     });
     let lorg = document.getElementById('listorg');
     Object.keys(orgs_num).forEach((org) => {
-      let elem = document.createElement('li');
-      elem.innerText = org + ': ' + orgs_num[org];
-      if (! list_orgs.includes(org)) {elem.innerText += ' (not included)'; }
-      lorg.appendChild(elem);
+      let etxt = '* [' + org + '](https://github.com/' + org + '): ' + orgs_num[org] + "\n";
+      lorg.innerText += etxt;
     });
   });
 };
@@ -83,6 +81,6 @@ window.addEventListener('load', ListOrgsValidate);
 <h2>Text version for copy</h2>
 <div><pre id="listtext"></pre></div>
 <h2>validate-repos organization counts</h2>
-<ul id="listorg"></ul>
+<div><pre id="listorg"></pre></div>
 </body>
 </html>
