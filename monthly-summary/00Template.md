@@ -33,13 +33,16 @@
 
 * [upcoming events list](https://www.w3.org/participate/eventscal.html)
 * [strategy repository](https://github.com/w3c/strategy/issues)
+  * 確認先
+    * [public-new-work](https://lists.w3.org/Archives/Public/public-new-work/)とかからピックアップ
+    * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
+    * [public-new-work](https://lists.w3.org/Archives/Public/public-new-work/)
   * Advance notice
-    * [public-new-work](https://lists.w3.org/Archives/Public/public-new-work/2023Jun/)とかからピックアップ
   * 該当月中に提案されこのページ作成時点で議論・検討中のもの
   * charterについて該当月中に動きがあったもの、ステータスサマリー付き
   * 新領域などについての議論
 * WGなどの憲章策定・更新によるCall for Participation、chair変更
-  * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
+  * new/recharter
   * extension
   * CG/BG
   * co-chair
