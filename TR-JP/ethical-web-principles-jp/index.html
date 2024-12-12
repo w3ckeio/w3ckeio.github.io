@@ -1,0 +1,790 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="ReSpec 35.2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    dfn{cursor:pointer}
+    .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
+    .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+    .dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;border-bottom-color:var(--indextable-hover-bg,#fff);top:0}
+    .dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1;border-bottom-color:var(--indextable-hover-bg,#a2a9b1)}
+    .dfn-panel *{margin:0}
+    .dfn-panel b{display:block;color:#000;color:var(--text,#000);margin-top:.25em}
+    .dfn-panel ul a[href]{color:#333;color:var(--text,#333)}
+    .dfn-panel>div{display:flex}
+    .dfn-panel a.self-link{font-weight:700;margin-right:auto}
+    .dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+    .dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+    .dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+    .dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+    .dfn-panel a[href]:hover{border-bottom-width:1px}
+    .dfn-panel ul{padding:0}
+    .dfn-panel li{margin-left:1em}
+    .dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+    </style>
+    
+    <title>Ethical Web Principles</title>
+    
+    <style id="respec-mainstyle">
+    @keyframes pop{
+    0%{transform:scale(1,1)}
+    25%{transform:scale(1.25,1.25);opacity:.75}
+    100%{transform:scale(1,1)}
+    }
+    a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+    a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+    a.bibref{text-decoration:none}
+    .respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+    .respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+    @supports not (text-decoration:red wavy underline){
+    .respec-offending-element:not(pre){display:inline-block}
+    .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+    }
+    #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+    cite .bibref{font-style:normal}
+    a[href].orcid{padding-left:4px;padding-right:4px}
+    a[href].orcid>svg{margin-bottom:-2px}
+    ol.tof,ul.tof{list-style:none outside none}
+    .caption{margin-top:.5em;font-style:italic}
+    #issue-summary>ul{column-count:2}
+    #issue-summary li{list-style:none;display:inline-block}
+    details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+    details.respec-tests-details>*{padding-right:2em}
+    details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+    details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+    details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+    details.respec-tests-details>li{padding-left:1em}
+    .self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+    aside.example .marker>a.self-link{color:inherit}
+    .header-wrapper{display:flex;align-items:baseline}
+    :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+    :is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+    :is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+    :is(h2,h3)+a.self-link{top:-.2em}
+    :is(h4,h5,h6)+a.self-link::before{color:#000}
+    @media (max-width:767px){
+    dd{margin-left:0}
+    }
+    @media print{
+    .removeOnSave{display:none}
+    }
+    </style>
+    
+    
+    <style type="text/css">
+    
+    </style>
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="The web should be a platform that helps people
+    and provides a positive social benefit.
+    As we continue to evolve the web platform,
+    we must therefore consider the consequences of our work.
+    The following document sets out ethical principles
+    that will drive W3C's continuing work in this direction.">
+    <link rel="canonical" href="https://www.w3.org/TR/ethical-web-principles/">
+    <style>
+    var{position:relative;cursor:pointer}
+    var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+    var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#222}
+    var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#222;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+    var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+    </style>
+    <script id="initialUserConfig" type="application/json">{
+      "specStatus": "STMT",
+      "editors": [
+        {
+          "name": "Daniel Appelquist",
+          "company": "Invited Expert",
+          "w3cid": 35086
+        },
+        {
+          "name": "Hadley Beeman",
+          "company": "Invited Expert",
+          "w3cid": 47320
+        },
+        {
+          "name": "Amy Guy",
+          "url": "https://rhiaro.co.uk",
+          "company": "Digital Bazaar",
+          "w3cid": 69000
+        }
+      ],
+      "group": "tag",
+      "wgPublicList": "www-tag",
+      "github": "w3ctag/ethical-web-principles",
+      "format": "markdown",
+      "shortName": "ethical-web-principles",
+      "latestVersion": "https://www.w3.org/TR/ethical-web-principles/",
+      "localBiblio": {
+        "UDHR": {
+          "title": "Universal Declaration of Human Rights",
+          "href": "https://www.un.org/en/universal-declaration-human-rights/",
+          "publisher": "United Nations",
+          "id": "udhr"
+        }
+      },
+      "publishDate": "2024-12-12",
+      "publishISODate": "2024-12-12T00:00:00.000Z",
+      "generatedSubtitle": "W3C Statement 12 December 2024"
+    }</script>
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-STMT"></head><body class="informative h-entry"><div class="head">
+        <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
+      </a></p>
+        <h1 id="title" class="title">Ethical Web Principles</h1> 
+        <p id="w3c-state"><a href="https://www.w3.org/standards/types#STMT">W3C Statement</a> <time class="dt-published" datetime="2024-12-12">12 December 2024</time></p>
+        <details open="">
+          <summary>More details about this document</summary>
+          <dl>
+            <dt>This version:</dt><dd>
+                    <a class="u-url" href="https://www.w3.org/TR/2024/STMT-ethical-web-principles-20241212/">https://www.w3.org/TR/2024/STMT-ethical-web-principles-20241212/</a>
+                  </dd>
+            <dt>Latest published version:</dt><dd>
+                    <a href="https://www.w3.org/TR/ethical-web-principles/">https://www.w3.org/TR/ethical-web-principles/</a>
+                  </dd>
+            <dt>Latest editor's draft:</dt><dd><a href="https://w3ctag.github.io/ethical-web-principles/">https://w3ctag.github.io/ethical-web-principles/</a></dd>
+            <dt>History:</dt><dd>
+                        <a href="https://www.w3.org/standards/history/ethical-web-principles/">https://www.w3.org/standards/history/ethical-web-principles/</a>
+                      </dd><dd>
+                        <a href="https://github.com/w3ctag/ethical-web-principles/commits/">Commit history</a>
+                      </dd>
+            
+            
+            
+            
+            
+            <dt>Editors:</dt><dd class="editor p-author h-card vcard" data-editor-id="35086">
+        <span class="p-name fn">Daniel Appelquist</span> (<span class="p-org org h-org">Invited Expert</span>)
+      </dd><dd class="editor p-author h-card vcard" data-editor-id="47320">
+        <span class="p-name fn">Hadley Beeman</span> (<span class="p-org org h-org">Invited Expert</span>)
+      </dd><dd class="editor p-author h-card vcard" data-editor-id="69000">
+        <a class="u-url url p-name fn" href="https://rhiaro.co.uk">Amy Guy</a> (<span class="p-org org h-org">Digital Bazaar</span>)
+      </dd>
+            
+            
+            <dt>Feedback:</dt><dd>
+            <a href="https://github.com/w3ctag/ethical-web-principles/">GitHub w3ctag/ethical-web-principles</a>
+            (<a href="https://github.com/w3ctag/ethical-web-principles/pulls/">pull requests</a>,
+            <a href="https://github.com/w3ctag/ethical-web-principles/issues/new/choose">new issue</a>,
+            <a href="https://github.com/w3ctag/ethical-web-principles/issues/">open issues</a>)
+          </dd><dd><a href="mailto:www-tag@w3.org?subject=%5Bethical-web-principles%5D%20YOUR%20TOPIC%20HERE">www-tag@w3.org</a> with subject line <kbd>[ethical-web-principles] <em>… message topic …</em></kbd> (<a rel="discussion" href="https://lists.w3.org/Archives/Public/www-tag">archives</a>)</dd>
+            
+            
+          </dl>
+        </details>
+        
+        
+        <p class="copyright">
+        <a href="https://www.w3.org/policies/#copyright">Copyright</a>
+        ©
+        2024
+        
+        <a href="https://www.w3.org/">World Wide Web Consortium</a>.
+        <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+        <a href="https://www.w3.org/policies/#Legal_Disclaimer">liability</a>,
+        <a href="https://www.w3.org/policies/#W3C_Trademarks">trademark</a> and
+        <a rel="license" href="https://www.w3.org/copyright/software-license-2023/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.
+      </p>
+        <hr title="Separator for header">
+      </div><section id="abstract" class="introductory"><h2>Abstract</h2>
+    
+    
+    <p>The web should be a platform that helps people
+    and provides a positive social benefit.
+    As we continue to evolve the web platform,
+    we must therefore consider the consequences of our work.
+    The following document sets out ethical principles
+    that will drive <abbr title="World Wide Web Consortium">W3C</abbr>'s continuing work in this direction.</p>
+    </section>
+    
+    <section id="sotd" class="introductory"><h2>Status of This Document</h2><p><em>This section describes the status of this
+          document at the time of its publication. A list of current <abbr title="World Wide Web Consortium">W3C</abbr>
+          publications and the latest revision of this technical report can be found
+          in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
+          https://www.w3.org/TR/.</em></p>
+    
+    
+    <p>This document is a Technical Architecture Group (TAG) Finding.
+    It does not contain any normative content.</p>
+    <p>This document reflects the consensus of the TAG at the time of publication.
+    It will continue to evolve and the TAG will issue updates as often as needed.</p>
+    <p>
+        This document was published by the <a href="https://www.w3.org/groups/other/tag">Technical Architecture Group</a> as
+        a Statement using the
+            <a href="https://www.w3.org/policies/process/20231103/#recs-and-notes">Note track</a>. 
+       </p>
+       <p>
+            A <abbr title="World Wide Web Consortium">W3C</abbr> Statement is a specification that, after extensive
+            consensus-building, is endorsed by
+            <abbr title="World Wide Web Consortium">W3C</abbr> and its Members.
+      </p><p data-deliverer="34270">
+        
+            The
+            <a href="https://www.w3.org/policies/patent-policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent
+              Policy</a>
+            does not carry any licensing requirements or commitments on this
+            document.
+          
+        
+      </p><p>
+                          This document is governed by the
+                          <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20231103/">03 November 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
+                        </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#intro"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#purpose"><bdi class="secno">1.1 </bdi>Purpose</a></li></ol></li><li class="tocline"><a class="tocxref" href="#principles"><bdi class="secno">2. </bdi>Principles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#oneweb"><bdi class="secno">2.1 </bdi>
+    There is one web
+      </a></li><li class="tocline"><a class="tocxref" href="#noharm"><bdi class="secno">2.2 </bdi>
+    The web does not cause harm to society
+      </a></li><li class="tocline"><a class="tocxref" href="#community"><bdi class="secno">2.3 </bdi>
+    The web supports healthy community and debate
+      </a></li><li class="tocline"><a class="tocxref" href="#allpeople"><bdi class="secno">2.4 </bdi>
+    The web is for all people
+      </a></li><li class="tocline"><a class="tocxref" href="#privacy"><bdi class="secno">2.5 </bdi>
+    The web is secure and respects people's privacy
+      </a></li><li class="tocline"><a class="tocxref" href="#expression"><bdi class="secno">2.6 </bdi>
+    The web enables freedom of expression
+      </a></li><li class="tocline"><a class="tocxref" href="#verify"><bdi class="secno">2.7 </bdi>
+    The web makes it possible to verify information
+      </a></li><li class="tocline"><a class="tocxref" href="#control"><bdi class="secno">2.8 </bdi>
+    The web enhances individuals' control and power
+      </a></li><li class="tocline"><a class="tocxref" href="#sustainable"><bdi class="secno">2.9 </bdi>
+    The web is an environmentally sustainable platform
+      </a></li><li class="tocline"><a class="tocxref" href="#transparent"><bdi class="secno">2.10 </bdi>
+    The web is transparent
+      </a></li><li class="tocline"><a class="tocxref" href="#multi"><bdi class="secno">2.11 </bdi>
+    The web is multi-browser, multi-OS, and multi-device
+      </a></li><li class="tocline"><a class="tocxref" href="#render"><bdi class="secno">2.12 </bdi>
+    The web can be consumed in any way that people choose
+      </a></li></ol></li><li class="tocline"><a class="tocxref" href="#acknowlegements"><bdi class="secno">A. </bdi>Acknowlegements</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">B.1 </bdi>Informative references</a></li></ol></li></ol></nav>
+    
+    <section id="introduction"><div class="header-wrapper"><h2 id="intro"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#intro" aria-label="Permalink for Section 1."></a></div><p>The web should empower an equitable, informed, and interconnected society.
+    It has been, and should continue to be, designed
+    to enable communication and knowledge-sharing for everyone.
+    In order for the web to continue to be beneficial to society,
+    we need to consider the ethical implications of our work
+    when we build web technologies, applications, and sites.</p>
+    <p>The web is made up of a number of technologies and technical standards.
+    HTML, CSS, and JavaScript are often thought of as the web's core set of technologies
+    but there are many other technologies, standards,
+    languages and APIs that come together to form the "web platform."
+    We strive to maintain a strong ethical framework as a differentiator for the web platform,
+    for example an emphasis on
+    <a href="https://www.w3.org/International/">internationalization</a>,
+    <a href="https://www.w3.org/WAI/">accessibility</a>,
+    <a href="https://www.w3.org/Privacy/">privacy</a>, and
+    <a href="https://www.w3.org/Security/">security</a>.
+    Web technologies are also released for use under a
+    <a href="https://www.w3.org/Consortium/Patent-Policy/">royalty-free license</a>
+    to enable open source implementation.
+    We build new web technologies in a collaborative manner
+    according to open processes
+    (for example, the <a href="https://www.w3.org/Consortium/Process/"><abbr title="World Wide Web Consortium">W3C</abbr> process</a>),
+    and in inclusive environments adhering to codes of conduct
+    (such as the <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>).</p>
+    <p>These are often cited as some of the strengths of the web.
+    Despite this, in the 30 years since the development of the web began,
+    it has become clear that the web platform can often be used in ways that subvert its original mission
+    or even be used to cause harm.</p>
+    <p>The architecture of the web is designed with
+    the notion of different classes of application that retrieve and process content,
+    and represent the needs of the application's users.
+    This includes web browsers,
+    web-hosted applications such as search engines,
+    and software that acts on web resources.
+    This lends itself well towards empowering people
+    by allowing them to choose the browser, search engine, or other application
+    that best meets their needs
+    (for example, with strong privacy protections).</p>
+    <p>The web should also support human rights, dignity, and personal agency.
+    We need to put internationally recognized human rights at the core of the web platform [<cite><a class="bibref" data-link-type="biblio" href="#bib-udhr" title="Universal Declaration of Human Rights">UDHR</a></cite>].
+    We can reinforce this approach by promoting ethical thinking across the web industry.</p>
+    <p>The principles in this document are deliberately unordered,
+    and many are interconnected with each other.
+    They are intended to be read together, rather than each in isolation, and to collectively support
+    a web that is beneficial for society.
+    When the effects of upholding one principle
+    may diminish the efficacy of another principle, the benefits and tradeoffs
+    need to be carefully balanced.
+    It is important to consider the context in which the technology
+    is being applied, the expected audience(s) for the technology,
+    who the technology benefits and who it may disadvantage,
+    and any power dynamics involved (see also the
+    <a href="https://www.w3.org/TR/design-principles/#priority-of-constituencies">priority of constituencies</a>).</p>
+    <section id="purpose-0"><div class="header-wrapper"><h3 id="purpose"><bdi class="secno">1.1 </bdi>Purpose</h3><a class="self-link" href="#purpose" aria-label="Permalink for Section 1.1"></a></div>
+    
+    <p>This is a statement of the ethical principles of the <abbr title="World Wide Web Consortium">W3C</abbr> community.
+    Spec developers, authors, and reviewers can use it to guide their thinking.
+    In particular, the purpose of this document is to
+    inform wide review of new charters,
+    new specifications, and
+    updates to published recommendations.
+    Others can read this document to understand how we are informing
+    our design process with ethical considerations.</p>
+    <p>For actionable guidance applicable to spec editors, site authors,
+    and others designing and building parts of the web platform,
+    see the <cite><a data-matched-text="[[[Design-Principles]]]" href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a></cite>, <cite><a data-matched-text="[[[security-privacy-questionnaire]]]" href="https://www.w3.org/TR/security-privacy-questionnaire/">Self-Review Questionnaire: Security and Privacy</a></cite>,
+    the <cite><a data-matched-text="[[[Privacy-Principles]]]" href="https://www.w3.org/TR/privacy-principles/">Privacy Principles</a></cite>, and <a href="https://tag.w3.org/findings/">TAG Findings</a>.</p>
+    </section>
+    
+    
+    </section><section id="principles"><div class="header-wrapper"><h2 id="x2-principles"><bdi class="secno">2. </bdi>Principles</h2><a class="self-link" href="#principles" aria-label="Permalink for Section 2."></a></div>
+    <section id="there-is-one-web"><div class="header-wrapper"><h3 id="oneweb" data-export="" data-dfn-type="dfn"><bdi class="secno">2.1 </bdi>
+    There is one web
+      </h3><a class="self-link" href="#oneweb" aria-label="Permalink for Section 2.1"></a></div>
+      
+      <p>
+    When we are adding new web technologies and platforms,
+    we will build them to cross regional and national boundaries.
+    People in one location should be able to view web pages
+    from anywhere that is connected to the web.
+      </p>
+    </section>
+    
+    <section id="the-web-does-not-cause-harm-to-society"><div class="header-wrapper"><h3 id="noharm" data-export="" data-dfn-type="dfn"><bdi class="secno">2.2 </bdi>
+    The web does not cause harm to society
+      </h3><a class="self-link" href="#noharm" aria-label="Permalink for Section 2.2"></a></div>
+      
+      <p>
+    When we are adding a feature or technology to the web,
+    we will work to prevent or mitigate any harm it might cause society or groups,
+    especially to vulnerable people.
+    We consider a range of threat models that account for abuse scenarios
+    at different scales, from societal to interpersonal.
+    We will prioritize potential benefits for web users over potential benefits to web developers,
+    content providers, user agents, advertisers, or others in the ecosystem,
+    in line with the
+    <a href="https://www.w3.org/TR/design-principles/#priority-of-constituencies">priority of constituencies</a>.
+    We commit to learning about and understanding diverse perspectives,
+    and will strive to reflect a respect for that diversity in the designs we produce,
+    so that our designs properly respect the interests and views of
+    all of the people who might be affected by them.
+      </p>
+    </section>
+    
+    <section id="the-web-supports-healthy-community-and-debate"><div class="header-wrapper"><h3 id="community" data-export="" data-dfn-type="dfn"><bdi class="secno">2.3 </bdi>
+    The web supports healthy community and debate
+      </h3><a class="self-link" href="#community" aria-label="Permalink for Section 2.3"></a></div>
+      
+      <p>
+    We are building technologies and platforms for distributing ideas,
+    for virtual interaction,
+    and for mass collaboration on any topic.
+    While those tools can be used for good,
+    they can also be used for spreading misinformation,
+    revealing private personal information (doxing),
+    harassment, and persecution.
+    We will consider these risks in the work we do,
+    and will build web technologies and platforms
+    that respect individuals' rights
+    and provide features to empower them against dangers like these.
+      </p>
+    </section>
+    
+    <section id="the-web-is-for-all-people"><div class="header-wrapper"><h3 id="allpeople" data-export="" data-dfn-type="dfn"><bdi class="secno">2.4 </bdi>
+    The web is for all people
+      </h3><a class="self-link" href="#allpeople" aria-label="Permalink for Section 2.4"></a></div>
+      
+      <p>
+    People should not need a high level of technical literacy to use the web.
+    Web platform technologies should behave consistently and intuitively.
+    We will build internationalization and localization capabilities
+    into our specifications and websites, including support for different languages.
+    Our specifications and websites are well internationalized,
+    provide support for language and cultural adaptation, and support localization,
+    so that our work is accessible to all users, regardless of language, writing system,
+    or culture.
+    We will accommodate people on low bandwidth networks and with low specification equipment.
+    The web platform and the tools we use to create it
+    must be accessible to people with disabilities,
+    including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.
+    Anyone should be able to meaningfully participate
+    in the creation of specifications, user agents, and content,
+    and the platform should enable a fully accessible end-user experience.
+      </p>
+    </section>
+    
+    <section id="the-web-is-secure-and-respects-people-s-privacy"><div class="header-wrapper"><h3 id="privacy" data-export="" data-dfn-type="dfn"><bdi class="secno">2.5 </bdi>
+    The web is secure and respects people's privacy
+      </h3><a class="self-link" href="#privacy" aria-label="Permalink for Section 2.5"></a></div>
+      
+      <p>
+    When we add features to the web platform,
+    we are making decisions that impact people's
+    ability to control their personal data.
+    This data includes their conversations,
+    their financial transactions
+    and how they live their lives.
+    We will start by creating web technologies
+    that create as few potential threats to web users as possible,
+    and mitigate the threats that we cannot avoid.
+    We will make sure people understand
+    what risks they are taking when they use the web.
+      </p>
+    </section>
+    
+    <section id="the-web-enables-freedom-of-expression"><div class="header-wrapper"><h3 id="expression" data-export="" data-dfn-type="dfn"><bdi class="secno">2.6 </bdi>
+    The web enables freedom of expression
+      </h3><a class="self-link" href="#expression" aria-label="Permalink for Section 2.6"></a></div>
+      
+      <p>
+    We will create web technologies and platforms that encourage free expression.
+    Our work should not enable state censorship, <a href="https://www.rfc-editor.org/rfc/rfc7258#section-1">surveillance</a>
+    or other practices that seek to limit this freedom.
+    This principle must be balanced with respect for other human rights
+    and does not imply that individual services on the web must therefore support all speech.
+      </p>
+    </section>
+    
+    <section id="the-web-makes-it-possible-to-verify-information"><div class="header-wrapper"><h3 id="verify" data-export="" data-dfn-type="dfn"><bdi class="secno">2.7 </bdi>
+    The web makes it possible to verify information
+      </h3><a class="self-link" href="#verify" aria-label="Permalink for Section 2.7"></a></div>
+      
+      <p>
+    Society relies on the integrity of public information.
+    We have a responsibility to build web technologies
+    to counter attempts to mislead,
+    deliberate or inadvertent,
+    and to maintain the integrity of information for public good.
+    The public needs verifiable source and context information to recognize
+    trustworthy web publishers and content.
+    The concept of origin and
+    <a href="https://www.w3.org/2001/tag/doc/distributed-content/">its relationship with information sources</a>
+    are core to the web's security model.
+      </p>
+    </section>
+    
+    <section id="the-web-enhances-individuals-control-and-power"><div class="header-wrapper"><h3 id="control" data-export="" data-dfn-type="dfn"><bdi class="secno">2.8 </bdi>
+    The web enhances individuals' control and power
+      </h3><a class="self-link" href="#control" aria-label="Permalink for Section 2.8"></a></div>
+      
+      <p>
+    We recognize that web technologies can be used
+    to manipulate and deceive people, complicate isolation, and encourage addictive behaviors.
+    We seek to mitigate against these potential abuses
+    and <a href="https://en.wikipedia.org/wiki/Dark_pattern">patterns</a>
+    when creating new technologies and platforms,
+    and avoid introducing technologies that increase the chance of
+    people being harmed in this way.
+    We aim to reduce centralization in web architecture,
+    minimizing single points of failure and single points of control.
+    We will also build web technologies for individual developers
+    as well as for developers at large companies and organizations.
+    The web should enable do-it-yourself developers.
+      </p>
+    </section>
+    
+    <section id="the-web-is-an-environmentally-sustainable-platform"><div class="header-wrapper"><h3 id="sustainable" data-export="" data-dfn-type="dfn"><bdi class="secno">2.9 </bdi>
+    The web is an environmentally sustainable platform
+      </h3><a class="self-link" href="#sustainable" aria-label="Permalink for Section 2.9"></a></div>
+      
+      <p>
+    Web technologies may have overall positive environmental impacts
+    as well as negative impacts.
+    These can change over time and vary geographically as
+    both web and environmental technologies develop.
+    We will endeavor not to do further harm to the environment
+    when we introduce new technologies to the web and keep in mind
+    that people most affected by the environmental consequences of new technologies
+    may not be those who benefit from the features introduced.
+    This includes, but is not limited to,
+    lowering carbon emissions by minimizing data storage and processing requirements, as well as reducing electronic waste by
+    maximizing the lifespan of physical devices through backwards compatibility.
+      </p>
+    </section>
+    
+    <section id="the-web-is-transparent"><div class="header-wrapper"><h3 id="transparent" data-export="" data-dfn-type="dfn"><bdi class="secno">2.10 </bdi>
+    The web is transparent
+      </h3><a class="self-link" href="#transparent" aria-label="Permalink for Section 2.10"></a></div>
+      
+      <p>
+    The web was built on a "view source" principle,
+    currently realized through robust developer tools built into many browsers.
+    We will always make sure it is possible
+    to determine how a web application was built
+    and how the code works.
+    Furthermore, we will always make sure it is possible
+    to audit and inspect web applications and underlying software
+    for security, privacy, or other considerations.
+      </p>
+    </section>
+    
+    <section id="the-web-is-multi-browser-multi-os-and-multi-device"><div class="header-wrapper"><h3 id="multi" data-export="" data-dfn-type="dfn"><bdi class="secno">2.11 </bdi>
+    The web is multi-browser, multi-OS, and multi-device
+      </h3><a class="self-link" href="#multi" aria-label="Permalink for Section 2.11"></a></div>
+      
+      <p>
+    We will not create web technologies that encourage the creation of websites
+    that work only in one browser,
+    or only on particular hardware.
+    We expect that content provided by accessing a URL
+    <a href="https://www.w3.org/TR/mobile-bp/#tc">should yield a thematically consistent experience</a>
+    when someone is accessing it from different devices.
+    The existence of multiple interoperable implementations
+    enables competition, and thus a variety of choices
+    for web users.
+      </p>
+    </section>
+    
+    <section id="the-web-can-be-consumed-in-any-way-that-people-choose"><div class="header-wrapper"><h3 id="render" data-export="" data-dfn-type="dfn"><bdi class="secno">2.12 </bdi>
+    The web can be consumed in any way that people choose
+      </h3><a class="self-link" href="#render" aria-label="Permalink for Section 2.12"></a></div>
+      
+      <p>
+    People must be able to change web pages according to their needs.
+    For example, people should be able to install style sheets,
+    assistive browser extensions,
+    and blockers of unwanted content or scripts.
+    We will build features and write specifications
+    that respect people's agency,
+    and will create user agents to represent those preferences on the web user's behalf.
+      </p>
+    </section>
+    
+    </section><section class="appendix" id="acknowlegements"><div class="header-wrapper"><h2 id="a-acknowlegements"><bdi class="secno">A. </bdi>Acknowlegements</h2><a class="self-link" href="#acknowlegements" aria-label="Permalink for Appendix A."></a></div>
+      
+      <p>
+    The TAG would like to thank the following people for their help, input, and feedback
+    during the conceptualization and ongoing development of this document:
+    Tantek Çelik (Mozilla),
+    Oluwatomisin Niyi-Awosusi,
+    Joanna J. Bryson (Professor of Ethics and Technology, Centre for Digital Governance, Hertie School),
+    Wendy Seltzer.
+      </p>
+    </section><section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-references"><bdi class="secno">B. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="informative-references"><div class="header-wrapper"><h3 id="b-1-informative-references"><bdi class="secno">B.1 </bdi>Informative references</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Appendix B.1"></a></div>
+        
+        <dl class="bibliography"><dt id="bib-design-principles">[design-principles]</dt><dd>
+          <a href="https://www.w3.org/TR/design-principles/"><cite>Web Platform Design Principles</cite></a>. Lea Verou.  W3C. 18 July 2024. W3C Working Group Note. URL: <a href="https://www.w3.org/TR/design-principles/">https://www.w3.org/TR/design-principles/</a>
+        </dd><dt id="bib-mobile-bp">[mobile-bp]</dt><dd>
+          <a href="https://www.w3.org/TR/mobile-bp/"><cite>Mobile Web Best Practices 1.0</cite></a>. Jo Rabin; Charles McCathieNevile.  W3C. 29 July 2008. W3C Recommendation. URL: <a href="https://www.w3.org/TR/mobile-bp/">https://www.w3.org/TR/mobile-bp/</a>
+        </dd><dt id="bib-privacy-principles">[Privacy-Principles]</dt><dd>
+          <a href="https://www.w3.org/TR/privacy-principles/"><cite>Privacy Principles</cite></a>. Robin Berjon; Jeffrey Yasskin.  W3C. 20 November 2024. W3C Working Group Note. URL: <a href="https://www.w3.org/TR/privacy-principles/">https://www.w3.org/TR/privacy-principles/</a>
+        </dd><dt id="bib-rfc7258">[RFC7258]</dt><dd>
+          <a href="https://www.rfc-editor.org/rfc/rfc7258"><cite>Pervasive Monitoring Is an Attack</cite></a>. S. Farrell; H. Tschofenig.  IETF. May 2014. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc7258">https://www.rfc-editor.org/rfc/rfc7258</a>
+        </dd><dt id="bib-security-privacy-questionnaire">[security-privacy-questionnaire]</dt><dd>
+          <a href="https://www.w3.org/TR/security-privacy-questionnaire/"><cite>Self-Review Questionnaire: Security and Privacy</cite></a>. Theresa O'Connor; Peter Snyder.  W3C. 16 December 2021. W3C Working Group Note. URL: <a href="https://www.w3.org/TR/security-privacy-questionnaire/">https://www.w3.org/TR/security-privacy-questionnaire/</a>
+        </dd><dt id="bib-udhr">[UDHR]</dt><dd>
+          <a href="https://www.un.org/en/universal-declaration-human-rights/"><cite>Universal Declaration of Human Rights</cite></a>.  United Nations. URL: <a href="https://www.un.org/en/universal-declaration-human-rights/">https://www.un.org/en/universal-declaration-human-rights/</a>
+        </dd></dl>
+      </section></section><p role="navigation" id="back-to-top">
+        <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+      </p><script id="respec-dfn-panel">(() => {
+    // @ts-check
+    if (document.respec) {
+      document.respec.ready.then(setupPanel);
+    } else {
+      setupPanel();
+    }
+    
+    function setupPanel() {
+      const listener = panelListener();
+      document.body.addEventListener("keydown", listener);
+      document.body.addEventListener("click", listener);
+    }
+    
+    function panelListener() {
+      /** @type {HTMLElement} */
+      let panel = null;
+      return event => {
+        const { target, type } = event;
+    
+        if (!(target instanceof HTMLElement)) return;
+    
+        // For keys, we only care about Enter key to activate the panel
+        // otherwise it's activated via a click.
+        if (type === "keydown" && event.key !== "Enter") return;
+    
+        const action = deriveAction(event);
+    
+        switch (action) {
+          case "show": {
+            hidePanel(panel);
+            /** @type {HTMLElement} */
+            const dfn = target.closest("dfn, .index-term");
+            panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+            const coords = deriveCoordinates(event);
+            displayPanel(dfn, panel, coords);
+            break;
+          }
+          case "dock": {
+            panel.style.left = null;
+            panel.style.top = null;
+            panel.classList.add("docked");
+            break;
+          }
+          case "hide": {
+            hidePanel(panel);
+            panel = null;
+            break;
+          }
+        }
+      };
+    }
+    
+    /**
+     * @param {MouseEvent|KeyboardEvent} event
+     */
+    function deriveCoordinates(event) {
+      const target = /** @type HTMLElement */ (event.target);
+    
+      // We prevent synthetic AT clicks from putting
+      // the dialog in a weird place. The AT events sometimes
+      // lack coordinates, so they have clientX/Y = 0
+      const rect = target.getBoundingClientRect();
+      if (
+        event instanceof MouseEvent &&
+        event.clientX >= rect.left &&
+        event.clientY >= rect.top
+      ) {
+        // The event probably happened inside the bounding rect...
+        return { x: event.clientX, y: event.clientY };
+      }
+    
+      // Offset to the middle of the element
+      const x = rect.x + rect.width / 2;
+      // Placed at the bottom of the element
+      const y = rect.y + rect.height;
+      return { x, y };
+    }
+    
+    /**
+     * @param {Event} event
+     */
+    function deriveAction(event) {
+      const target = /** @type {HTMLElement} */ (event.target);
+      const hitALink = !!target.closest("a");
+      if (target.closest("dfn:not([data-cite]), .index-term")) {
+        return hitALink ? "none" : "show";
+      }
+      if (target.closest(".dfn-panel")) {
+        if (hitALink) {
+          return target.classList.contains("self-link") ? "hide" : "dock";
+        }
+        const panel = target.closest(".dfn-panel");
+        return panel.classList.contains("docked") ? "hide" : "none";
+      }
+      if (document.querySelector(".dfn-panel:not([hidden])")) {
+        return "hide";
+      }
+      return "none";
+    }
+    
+    /**
+     * @param {HTMLElement} dfn
+     * @param {HTMLElement} panel
+     * @param {{ x: number, y: number }} clickPosition
+     */
+    function displayPanel(dfn, panel, { x, y }) {
+      panel.hidden = false;
+      // distance (px) between edge of panel and the pointing triangle (caret)
+      const MARGIN = 20;
+    
+      const dfnRects = dfn.getClientRects();
+      // Find the `top` offset when the `dfn` can be spread across multiple lines
+      let closestTop = 0;
+      let minDiff = Infinity;
+      for (const rect of dfnRects) {
+        const { top, bottom } = rect;
+        const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+        if (diffFromClickY < minDiff) {
+          minDiff = diffFromClickY;
+          closestTop = top;
+        }
+      }
+    
+      const top = window.scrollY + closestTop + dfnRects[0].height;
+      const left = x - MARGIN;
+      panel.style.left = `${left}px`;
+      panel.style.top = `${top}px`;
+    
+      // Find if the panel is flowing out of the window
+      const panelRect = panel.getBoundingClientRect();
+      const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+      if (panelRect.right > SCREEN_WIDTH) {
+        const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+        const newCaretOffset = left - newLeft;
+        panel.style.left = `${newLeft}px`;
+        /** @type {HTMLElement} */
+        const caret = panel.querySelector(".caret");
+        caret.style.left = `${newCaretOffset}px`;
+      }
+    
+      // As it's a dialog, we trap focus.
+      // TODO: when <dialog> becomes a implemented, we should really
+      // use that.
+      trapFocus(panel, dfn);
+    }
+    
+    /**
+     * @param {HTMLElement} panel
+     * @param {HTMLElement} dfn
+     * @returns
+     */
+    function trapFocus(panel, dfn) {
+      /** @type NodeListOf<HTMLAnchorElement> elements */
+      const anchors = panel.querySelectorAll("a[href]");
+      // No need to trap focus
+      if (!anchors.length) return;
+    
+      // Move focus to first anchor element
+      const first = anchors.item(0);
+      first.focus();
+    
+      const trapListener = createTrapListener(anchors, panel, dfn);
+      panel.addEventListener("keydown", trapListener);
+    
+      // Hiding the panel releases the trap
+      const mo = new MutationObserver(records => {
+        const [record] = records;
+        const target = /** @type HTMLElement */ (record.target);
+        if (target.hidden) {
+          panel.removeEventListener("keydown", trapListener);
+          mo.disconnect();
+        }
+      });
+      mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+    }
+    
+    /**
+     *
+     * @param {NodeListOf<HTMLAnchorElement>} anchors
+     * @param {HTMLElement} panel
+     * @param {HTMLElement} dfn
+     * @returns
+     */
+    function createTrapListener(anchors, panel, dfn) {
+      const lastIndex = anchors.length - 1;
+      let currentIndex = 0;
+      return event => {
+        switch (event.key) {
+          // Hitting "Tab" traps us in a nice loop around elements.
+          case "Tab": {
+            event.preventDefault();
+            currentIndex += event.shiftKey ? -1 : +1;
+            if (currentIndex < 0) {
+              currentIndex = lastIndex;
+            } else if (currentIndex > lastIndex) {
+              currentIndex = 0;
+            }
+            anchors.item(currentIndex).focus();
+            break;
+          }
+    
+          // Hitting "Enter" on an anchor releases the trap.
+          case "Enter":
+            hidePanel(panel);
+            break;
+    
+          // Hitting "Escape" returns focus to dfn.
+          case "Escape":
+            hidePanel(panel);
+            dfn.focus();
+            return;
+        }
+      };
+    }
+    
+    /** @param {HTMLElement} panel */
+    function hidePanel(panel) {
+      if (!panel) return;
+      panel.hidden = true;
+      panel.classList.remove("docked");
+    }
+    })()</script><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+    
