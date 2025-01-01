@@ -1,0 +1,10 @@
+# gh-pages jekyll W3C theme
+title: W3C Japan unofficial page
+email: keio-contact@w3.org
+description: >
+  Leading the Web to its Full Potential
+member_only: false
+baseurl: "/"
+remote_theme: w3c/w3c-jekyll-theme
+plugins:
+- jekyll-remote-theme
