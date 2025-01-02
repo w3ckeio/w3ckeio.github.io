@@ -34,7 +34,6 @@
 * [upcoming events list](https://www.w3.org/participate/eventscal.html)
 * [strategy repository](https://github.com/w3c/strategy/issues)
   * 確認先
-    * [public-new-work](https://lists.w3.org/Archives/Public/public-new-work/)とかからピックアップ
     * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
     * [public-new-work](https://lists.w3.org/Archives/Public/public-new-work/)
   * Advance notice
