@@ -32,7 +32,7 @@
 ## 直近の予定・最近の変更
 
 * [upcoming events list](https://www.w3.org/participate/eventscal.html)
-* [strategy repository](https://github.com/w3c/strategy/issues)
+* [strategy repository](https://github.com/w3c/strategy/issues) ([dashboard](https://www.w3.org/2024/03/charters-in-dev.html))
   * 確認先
     * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
     * [public-new-work](https://lists.w3.org/Archives/Public/public-new-work/)
