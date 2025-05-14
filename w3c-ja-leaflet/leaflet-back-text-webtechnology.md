@@ -134,8 +134,37 @@ Pointer Events WGではマウス・ペンの詳細な情報取得やイベント
 
 ## Media and Entertainment
 
+高度なUIを形成するには画像・動画といったメディア対応が必須になります。
+また、近年の急速な社会のオンライン化により、効率的なオンライン通信への要求も高まっています。
+多様な画像・動画形式が利用されていますが、W3CではPNG WGにてPNG形式の刷新や、XMLベースのベクター画像形式であるSVG仕様のメンテナンスをSVG WGにて行っています。
 
+### Movie
 
+動画、音声処理については、Audio WGにて、シンセサイザーを実現するような、音声グラフ、音源、エフェクト、立体音響など豊富な機能を持つWeb Audio APIの初版勧告仕様を2021年に公開して以来、
+より使いやすい仕様にするための更新を続けています。
+また、Media WGではビデオ表示のためのMSE/EMEの公開以降も、他のアプリの稼働時に画面上にビデオを表示し続けるためのPicture-in-Pictureや、再生制御などを表示するためのMedia Session、
+メディアデータを処理するコーデックを利用するためのWebCodecsなどの仕様を継続して開発し続けています。
+
+### Streaming
+
+ブラウザ上でオンラインビデオ通話を実現するWebRTCの公開草案初版が2011年にWeb Real-Time Communications (WebRTC) WGから公表されて以来、ブラウザでの動画生成を含めたメディア通信機能が拡張され続けてきました。
+WebRTC WGではWebRTCの開発に並行して、画面キャプチャのScreen Capture、カメラ動画などをブラウザで扱えるようにするMedia Capture and Streamsや動画データそのものを編集するためのMediaStreamの各種仕様を開発しています。
+そしてWebRTCの利用が進化する中で、より効率的にかつさまざまな機能を併用してオンライン通信を行う要請が強くなったことから、WebCodecsなどWebRTCの多数の構成要素を分割したそれぞれについての仕様策定が進められています。
+WebTransport WGではその中でもHTTP/3上で双方向通信を実現するためのWebTransport仕様をIETFと協働して開発しています。
 
 ## Trust
 
+
+
+
+
+
+  - Web Application Security WG
+  - Ad
+    - PAT WG
+  - ID
+    - Federated Identity WG
+  - Authentication
+    - Web Authentication WG
+  - Payments
+    - Web Payments WG
