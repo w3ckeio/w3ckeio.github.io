@@ -95,6 +95,7 @@ Webのコア技術はいまなお進化し続けています。
 CSS WGでは90を超える領域について、130個を超える仕様書を開発・維持しており、いまなお新しいデザイン上の概念のCSSへの実装や、実利用での不便性から要請された新機能の追加を活発に行っています。
 また、W3CのコミュニティーグループであるWeb Incubator CG (WICG)やOpen UI CGでは、HTML仕様を所管するWHATWGやCSS WGと協働してWebに新規追加すべき新しいAPIのインキュベーションや、
 既存の多数のUIライブラリで共通して実装されているUI機能を抽出し概念化することでHTMLやCSSに新しい機能・概念を導入する活動が行われています。
+数式をブラウザ上で表示するためのMathMLについても、基本的な機能に限定したMathML CoreとMathML第4版に分割した形でMath WGにおいて開発が続いています。
 
 ## Web Application
 
@@ -154,17 +155,17 @@ WebTransport WGではその中でもHTTP/3上で双方向通信を実現する�
 
 ## Trust
 
+オンライン通販や金融サービスなど、日々の生活がオンラインサービスに依存するようになってきている中、日常のさまざまな場面でIDと認証を利用しており、安全なWebの重要性が高まっています。
+Web Application Security WGでは、多数のサービスの連携によるウェブサービスにおいてコンテンツを読み込むかどうかのポリシーを定義するためのCSPや、
+ウェブ開発者がブラウザの機能をサイトで利用するときにユーザの許可を得るためのPermissions Policyなどを策定しています。
 
+認証の領域では、パスワードをネットワーク上に送信せずに認証を行う機構を標準化するFIDOと協働でWeb Authentication WGがブラウザ上でFIDO方式の認証を実現するWeb Authentication仕様を開発しており、
+IDプロバイダー(IdP)を利用した認証をサービスが利用する際に、ブラウザ側でOIDCやSAMLと互換性のある手法による認証・認可情報のやり取りを行うようにするためのFederated Credential Management (FedCM) API
+がFederated Identity WGにて議論されています。後者は一旦外部サイトに移動し認証してから、認可情報を3rd party cookieなどを利用し戻ってくるような機構を置き換えるものです。
 
+決済領域ではWeb Payments WGが決済自体やその情報の扱いをブラウザが行うための仕様であるPayment Request APIを開発しており、
+加えて決済認証においてはPSD2などの強固な顧客認証の規制にも準拠するWeb Authenticationをベースとした強固な認証方法となるSecure Payment Confirmation (SPC)を開発中です。
 
-
-
-  - Web Application Security WG
-  - Ad
-    - PAT WG
-  - ID
-    - Federated Identity WG
-  - Authentication
-    - Web Authentication WG
-  - Payments
-    - Web Payments WG
+3rd party cookieなどのユーザ追跡の利用などで課題が提示されることが多い広告領域については、2024年11月にPrivate Advertising Technology WG (PATWG)が設立され、
+プライバシーに配慮した形でどのような機構が考えられるのかを含めた検討が進められています。
+また、ユーザによるデータ主権に関連して、ユーザが管理権限を持つ領域にあるユーザデータをオンラインサービスが利用するための新しいプロトコルの策定がLinked Web Storage WGで始まっています。
