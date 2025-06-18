@@ -3,3 +3,4 @@
 * [W3Cアップデートの月間サマリー](monthly-summary/)
 * [用語集](glossary/)
 * [テクニカルレポートの日本語訳](TR-JP)
+* [W3C日本語版リーフレット](w3c-ja-leaflet/)
