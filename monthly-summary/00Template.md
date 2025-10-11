@@ -3,7 +3,7 @@
 - 仕様公開以外のニュース: (仕様公開以外のニュースエントリ数)
 - ブログポスト: (一般・WGにかかわらずブログポスト数)
 - グループ
-  - Advance notice: 
+  - Charter refininment phase: 
   - 新規charter議論: 
   - recharter: 
   - グループ新期間: 
