@@ -3,7 +3,7 @@
 - 仕様公開以外のニュース: (仕様公開以外のニュースエントリ数)
 - ブログポスト: (一般・WGにかかわらずブログポスト数)
 - グループ
-  - Advance notice: 
+  - Charter refininment phase: 
   - 新規charter議論: 
   - recharter: 
   - グループ新期間: 
@@ -36,7 +36,7 @@
   * 確認先
     * [chairs listのメールより](https://lists.w3.org/Archives/Member/chairs/)
     * [public-new-work](https://lists.w3.org/Archives/Public/public-new-work/)
-  * Advance notice
+  * Charter refininment phase
   * 該当月中に提案されこのページ作成時点で議論・検討中のもの
   * charterについて該当月中に動きがあったもの、ステータスサマリー付き
   * 新領域などについての議論
